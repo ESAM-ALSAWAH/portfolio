@@ -15,16 +15,40 @@ const MarqueeHeader = () => {
             className="flex gap-4"
             style={{ willChange: "transform" }}
           >
-            {Array(5)
-              .fill(0)
-              .map((_, i) => (
-                <span key={i} className="mx-4 text-sm font-medium">
-                  <span className="text-zinc-500">LATEST WORK AND</span>{" "}
-                  <span className="text-white">FEATURED</span>{" "}
-                  <span className="text-zinc-500">LATEST WORK AND</span>{" "}
-                  <span className="text-white">FEATURED</span>
-                </span>
-              ))}
+            <span className="mx-4 text-sm font-medium tracking-wide">
+              <span className="text-zinc-500">CRAFTING</span>{" "}
+              <span className="text-white">MODERN UI/UX</span>{" "}
+              <span className="text-zinc-500">WITH</span>{" "}
+              <span className="text-white">REACT & TAILWIND</span>
+            </span>
+
+            <span className="mx-4 text-sm font-medium tracking-wide">
+              <span className="text-zinc-500">OPTIMIZED FOR</span>{" "}
+              <span className="text-white">PERFORMANCE</span>{" "}
+              <span className="text-zinc-500">&</span>{" "}
+              <span className="text-white">ACCESSIBILITY</span>
+            </span>
+
+            <span className="mx-4 text-sm font-medium tracking-wide">
+              <span className="text-zinc-500">PASSIONATE ABOUT</span>{" "}
+              <span className="text-white">CLEAN CODE</span>{" "}
+              <span className="text-zinc-500">&</span>{" "}
+              <span className="text-white">DX</span>
+            </span>
+
+            <span className="mx-4 text-sm font-medium tracking-wide">
+              <span className="text-zinc-500">BUILDING</span>{" "}
+              <span className="text-white">COMPONENT SYSTEMS</span>{" "}
+              <span className="text-zinc-500">FOR</span>{" "}
+              <span className="text-white">SCALABILITY</span>
+            </span>
+
+            <span className="mx-4 text-sm font-medium tracking-wide">
+              <span className="text-zinc-500">REAL PROJECTS IN</span>{" "}
+              <span className="text-white">NEXT.JS</span>{" "}
+              <span className="text-zinc-500">&</span>{" "}
+              <span className="text-white">VUE</span>
+            </span>
           </div>
         </div>
       </div>
