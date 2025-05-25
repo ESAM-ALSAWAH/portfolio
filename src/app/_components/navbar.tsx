@@ -10,22 +10,22 @@ const links = [
   {
     text: "Home",
     href: "/",
-    icon: <House />,
+    icon: <House size={20} />,
   },
   {
     text: "About",
     href: "/about",
-    icon: <Info />,
+    icon: <Info size={20} />,
   },
   {
     text: "Works",
     href: "/works",
-    icon: <BriefcaseBusiness />,
+    icon: <BriefcaseBusiness size={20} />,
   },
   {
     text: "Contact",
     href: "/contact",
-    icon: <Mail />,
+    icon: <Mail size={20} />,
   },
 ];
 export function Navbar() {
@@ -58,7 +58,7 @@ export function Navbar() {
             href={v.href}
             onClick={playClickAudio}
             className={cn(
-              "flex-1 items-center justify-center flex flex-col gap-1 text-foreground-secondary transition duration-200 hover:text-white",
+              "flex-1 items-center justify-center flex flex-col gap-1 text-sm text-foreground-secondary transition duration-200 hover:text-white",
               isActiveRoute(v.href) ? "text-white" : ""
             )}
           >
