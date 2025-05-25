@@ -4,7 +4,7 @@ import { SectionCard, SectionCardIcon } from "./section-card";
 const AboutCard = () => {
   return (
     <SectionCard href="/" className="flex flex-col">
-      <div className="flex-1 grid place-items-center relative min-h-[130px]">
+      <div className="flex-1 grid place-items-center relative min-h-[100px]">
         <Image
           alt="Signature"
           src="/images/signature.png"

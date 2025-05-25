@@ -7,7 +7,7 @@ const MarqueeHeader = () => {
   const { containerRef, scrollRef } = useSliderX(0.4);
 
   return (
-    <SectionCard>
+    <SectionCard className="py-3">
       <div ref={containerRef} className="flex w-full whitespace-nowrap">
         <div className="overflow-hidden">
           <div

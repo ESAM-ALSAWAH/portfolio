@@ -33,7 +33,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${robotoSans.variable} font-roboto dark`}
       >
-        <div className="max-w-6xl px-4 pb-20 sm:pb-10 mx-auto">
+        <div className="max-w-5xl px-4 pb-20 sm:pb-10 mx-auto">
           <Navbar />
           <main className="mt-5">{children}</main>
         </div>
