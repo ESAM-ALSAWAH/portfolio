@@ -63,6 +63,7 @@ const SectionCard = (props: SectionCardProps) => {
           href={href}
           onClick={playClickAudio}
           className="absolute inset-0"
+          scroll
         />
       )}
     </div>
