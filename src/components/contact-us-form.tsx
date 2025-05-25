@@ -65,6 +65,7 @@ export function ContactUsForm() {
         <Input
           placeholder="Name *"
           className={inputClassName(errors.name)}
+          inputMode="text"
           {...form.register("name")}
         />
         <ErrorMessage message={errors.name} />
@@ -73,6 +74,7 @@ export function ContactUsForm() {
         <Input
           placeholder="Email *"
           className={inputClassName(errors.email)}
+          inputMode="email"
           {...form.register("email")}
         />
         <ErrorMessage message={errors.email} />
@@ -81,6 +83,7 @@ export function ContactUsForm() {
         <Input
           placeholder="Subject *"
           className={inputClassName(errors.subject)}
+          inputMode="text"
           {...form.register("subject")}
         />
         <ErrorMessage message={errors.subject} />
@@ -88,6 +91,7 @@ export function ContactUsForm() {
       <div>
         <Textarea
           placeholder="Message *"
+          inputMode="text"
           className={inputClassName(errors.message)}
           {...form.register("message")}
         />
