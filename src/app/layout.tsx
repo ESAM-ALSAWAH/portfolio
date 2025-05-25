@@ -18,13 +18,7 @@ export const metadata: Metadata = {
     title: "Portfolio | Esam Alsawah",
     description:
       "I'm a passionate developer with a strong background in web development and a deep love for creating innovative and user-friendly web applications.",
-    images: [
-      {
-        url: "/images/og.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    type: "website",
   },
 };
 
