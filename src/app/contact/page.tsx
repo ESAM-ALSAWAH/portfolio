@@ -62,7 +62,7 @@ export default async function Contact() {
           icon={<Phone />}
           description="(+963) 943-618-200"
           Link={(props) => (
-            <a {...props} href="whatsapp://+963943618200" target="_blank" />
+            <a {...props} href="https://wa.me/+963943618200" target="_blank" />
           )}
         />
         <ContactBox
