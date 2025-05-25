@@ -54,8 +54,10 @@ export default async function Contact() {
         <ContactBox
           title="Email"
           icon={<Mail />}
-          description="esama@esama.com"
-          Link={(props) => <a {...props} href="mailto:esama@esama.com" />}
+          description="esam.alsawah2000@gmail.com"
+          Link={(props) => (
+            <a {...props} href="mailto:esam.alsawah2000@gmail.com" />
+          )}
         />
         <ContactBox
           title="Phone"
