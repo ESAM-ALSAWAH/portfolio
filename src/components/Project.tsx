@@ -17,6 +17,7 @@ import {
   DrawerDescription,
   DrawerTitle,
 } from "./ui/drawer";
+import { BlurImage } from "./blur-image";
 
 interface ProjectProps {
   title: string;
@@ -95,11 +96,14 @@ export default function Project(props: ProjectProps) {
       : <Drawer open={open} onOpenChange={setOpen}>
           <DrawerContent className="max-h-screen min-h-screen z-[100]">
             <div className="flex flex-col gap-4 p-5  overflow-auto">
-              <img
-                src={cover}
-                alt={title}
-                className="object-cover rounded-md h-[300px]"
-              />
+              <div className="relative h-[300px]">
+                <BlurImage
+                  src={cover}
+                  alt={title}
+                  className="object-cover rounded-md h-[300px]"
+                  fill
+                />
+              </div>
 
               <DrawerTitle>{title}</DrawerTitle>
               <DrawerDescription>{description}</DrawerDescription>
