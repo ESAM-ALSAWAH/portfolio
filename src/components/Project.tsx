@@ -13,10 +13,8 @@ import { Button } from "./ui/button";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerTitle,
 } from "./ui/drawer";
 
@@ -95,13 +93,14 @@ export default function Project(props: ProjectProps) {
           </DialogContent>
         </Dialog>
       : <Drawer open={open} onOpenChange={setOpen}>
-          <DrawerContent>
-            <div className="flex flex-col gap-4 mt-5 px-5 overflow-auto">
+          <DrawerContent className="min-h-full">
+            <div className="flex flex-col gap-4 mt-5 px-5 overflow-auto pb-5">
               <img
                 src={cover}
                 alt={title}
                 className="object-cover rounded-md h-[300px]"
               />
+
               <DrawerTitle>{title}</DrawerTitle>
               <DrawerDescription>{description}</DrawerDescription>
               {skills && skills?.length > 0 && (
@@ -121,12 +120,13 @@ export default function Project(props: ProjectProps) {
                   </div>
                 </div>
               )}
+              <Link href={link} target="_blank">
+                <Button variant="secondary" className="w-full cursor-pointer">
+                  View Project
+                  <ExternalLink className="size-4" />
+                </Button>
+              </Link>
             </div>
-            <DrawerFooter className="pt-2 mt-4">
-              <DrawerClose asChild>
-                <Button variant="outline">Close</Button>
-              </DrawerClose>
-            </DrawerFooter>
           </DrawerContent>
         </Drawer>
       }
