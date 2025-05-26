@@ -62,7 +62,7 @@ export default async function About() {
   return (
     <div className="flex flex-col sm:flex-row items-start gap-10">
       <div className="flex-1 sm:sticky sm:top-20">
-        <SectionCard>
+        <SectionCard className="w-full">
           <div className="relative w-full ">
             <img
               alt="me"
