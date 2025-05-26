@@ -28,7 +28,7 @@ interface ProjectProps {
   skills?: string[];
 }
 
-export function Project(props: ProjectProps) {
+export default function Project(props: ProjectProps) {
   const { cover, description, link, title, skills } = props;
   const [open, setOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");

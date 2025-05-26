@@ -1,7 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
 import { me } from "@/data/me";
-import { Project } from "@/components/Project";
+import dynamic from "next/dynamic";
+
+const Project = dynamic(() => import("@/components/Project"), {});
 
 export const metadata: Metadata = {
   title: "Projects",

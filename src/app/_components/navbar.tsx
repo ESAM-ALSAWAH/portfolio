@@ -51,7 +51,7 @@ export function Navbar() {
           </Link>
         ))}
       </div>
-      <div className="fixed bottom-0 left-0 right-0 items-center gap-4 flex md:hidden bg-[#1F1F1F] p-2 z-40 border-t border-t-zinc-900">
+      <div className="fixed bottom-0 left-0 right-0 items-center gap-4 flex md:hidden bg-[#1F1F1F] p-2 z-[1000] border-t border-t-zinc-900 ">
         {links?.map((v) => (
           <Link
             key={v.href}
