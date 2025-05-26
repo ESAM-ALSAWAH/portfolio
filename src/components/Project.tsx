@@ -42,7 +42,10 @@ export function Project(props: ProjectProps) {
         </div>
       </SectionCard>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent withCloseIcon={false} className="pt-0">
+        <DialogContent
+          withCloseIcon={false}
+          className="pt-0 max-h-[90vh] overflow-auto"
+        >
           <div className="flex flex-col gap-4 mt-5">
             <img
               src={cover}
