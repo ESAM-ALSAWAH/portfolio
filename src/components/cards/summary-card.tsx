@@ -5,7 +5,7 @@ const SummaryCard = () => {
   return (
     <SectionCard>
       <div className="h-full flex flex-col sm:flex-row sm:items-center gap-5">
-        <div className="relative w-full max-w-48 mx-auto min-h-48 overflow-hidden rounded-tr-2xl rounded-bl-2xl rounded-tl-2xl rounded-br-2xl sm:rounded-tr-none sm:rounded-bl-none">
+        <div className="relative w-full sm:max-w-48 mx-auto min-h-48 overflow-hidden rounded-tr-2xl rounded-bl-2xl rounded-tl-2xl rounded-br-2xl sm:rounded-tr-none sm:rounded-bl-none">
           <Image alt="me" src="/images/me.jpg" className="object-cover" fill />
           <div className="absolute inset-0 bg-black/50  z-40" />
         </div>
