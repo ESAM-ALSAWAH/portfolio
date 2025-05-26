@@ -61,7 +61,7 @@ const Skill = ({
 export default async function About() {
   return (
     <div className="flex flex-col sm:flex-row items-start gap-10">
-      <div className="flex-1 sm:sticky sm:top-20 ">
+      <div className="flex-1 sm:sticky sm:top-20 w-full">
         <SectionCard className="w-full min-w-full">
           <div className="relative w-full">
             <img
