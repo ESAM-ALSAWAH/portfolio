@@ -4,7 +4,6 @@ import { SectionCard } from "@/components/cards/section-card";
 import { me } from "@/data/me";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
