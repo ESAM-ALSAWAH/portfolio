@@ -18,8 +18,8 @@ const links = [
     icon: <Info size={20} />,
   },
   {
-    text: "Works",
-    href: "/works",
+    text: "Projects",
+    href: "/projects",
     icon: <BriefcaseBusiness size={20} />,
   },
   {
