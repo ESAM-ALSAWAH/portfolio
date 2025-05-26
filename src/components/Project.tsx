@@ -39,11 +39,11 @@ export function Project(props: ProjectProps) {
         className="flex flex-col gap-4 p-3 cursor-pointer"
         onClick={() => setOpen(true)}
       >
-        <div className="relative">
+        <div className="relative w-full">
           <img
             src={cover}
             alt={title}
-            className="object-cover rounded-card min-h-[200px]"
+            className="object-cover rounded-card min-h-[200px] w-full"
           />
           <div className="absolute inset-0 bg-black/20  z-40 rounded-card" />
         </div>
