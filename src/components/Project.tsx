@@ -93,8 +93,8 @@ export default function Project(props: ProjectProps) {
           </DialogContent>
         </Dialog>
       : <Drawer open={open} onOpenChange={setOpen}>
-          <DrawerContent className="min-h-full">
-            <div className="flex flex-col gap-4 mt-5 px-5 overflow-auto pb-5">
+          <DrawerContent className="max-h-screen min-h-screen z-[100]">
+            <div className="flex flex-col gap-4 p-5  overflow-auto">
               <img
                 src={cover}
                 alt={title}
@@ -103,8 +103,9 @@ export default function Project(props: ProjectProps) {
 
               <DrawerTitle>{title}</DrawerTitle>
               <DrawerDescription>{description}</DrawerDescription>
+
               {skills && skills?.length > 0 && (
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col h-fit pb-2 gap-2">
                   <h6>Skills</h6>
                   <div className="flex flex-wrap gap-2">
                     {skills.map((skill, index) => (
