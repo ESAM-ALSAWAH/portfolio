@@ -1,5 +1,3 @@
-import { Github, Linkedin } from "lucide-react";
-
 const techSkills = [
   {
     category: "Frontend Development",
