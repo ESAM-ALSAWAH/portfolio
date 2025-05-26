@@ -96,7 +96,7 @@ export default function Project(props: ProjectProps) {
         </Dialog>
       : <Drawer open={open} onOpenChange={setOpen}>
           <DrawerContent>
-            <div className="flex flex-col gap-4 mt-5 px-5">
+            <div className="flex flex-col gap-4 mt-5 px-5 overflow-auto">
               <img
                 src={cover}
                 alt={title}
