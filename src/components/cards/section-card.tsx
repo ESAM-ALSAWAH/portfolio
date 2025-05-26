@@ -10,6 +10,7 @@ interface SectionCardProps {
   href?: string;
   className?: string;
   linkInIcon?: boolean;
+  onClick?: () => void;
 }
 
 const SectionCardIcon = ({
@@ -48,13 +49,14 @@ const SectionCardIcon = ({
   return !linkInIcon ? Icon : <Link href={href || "/"}>{Icon}</Link>;
 };
 const SectionCard = (props: SectionCardProps) => {
-  const { children, href, className, linkInIcon } = props;
+  const { children, href, className, linkInIcon, onClick } = props;
   return (
     <div
       className={cn(
         "group p-6 relative rounded-card overflow-hidden border-1 border-zinc-800 linear-gradient",
         className
       )}
+      onClick={onClick}
     >
       {children}
 

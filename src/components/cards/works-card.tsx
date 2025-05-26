@@ -3,7 +3,7 @@ import { SectionCard, SectionCardIcon } from "./section-card";
 
 const WorksCard = () => {
   return (
-    <SectionCard href="/" className="flex flex-col">
+    <SectionCard href="/projects" className="flex flex-col">
       <div className="flex-1 grid place-items-center relative min-h-[100px]">
         <Image
           alt="Works"
