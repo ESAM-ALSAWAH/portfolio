@@ -36,7 +36,7 @@ export default function Project(props: ProjectProps) {
   return (
     <>
       <SectionCard
-        className="flex flex-col gap-4 p-3 cursor-pointer"
+        className="flex flex-col gap-4 p-3 cursor-pointer w-full"
         onClick={() => setOpen(true)}
       >
         <div className="relative w-full">
